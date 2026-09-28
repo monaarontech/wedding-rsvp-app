@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .floral-top-left {
+    background: radial-gradient(circle, rgba(244, 211, 219, 0.45) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+}
