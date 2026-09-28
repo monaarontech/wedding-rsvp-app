@@ -166,7 +166,7 @@ export default function RsvpForm({ onSuccess }) {
         {/* Message */}
         <div>
           <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">
-            Message for Gereth &amp; Garette
+            Message for Gereth &amp; Garette <span class="text-gray-400 font-normal lowercase">(optional)</span>
           </label>
           <textarea
             rows="2"
