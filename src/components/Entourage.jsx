@@ -84,7 +84,7 @@ export default function Entourage() {
           </div>
           <div class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
             <span class="font-serifTitle italic text-xs text-rose-600 block mb-1">To clothe us as one</span>
-            <p class="text-[11px] font-medium text-gray-800">Mr. Bullet F. Ramos</p>
+            <p class="text-[11px] font-medium text-gray-800">Mr. Jazer M. Palasigue</p>
             <p class="text-[11px] text-gray-700">Ms. Nuela M. Marcelo</p>
           </div>
           <div class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
@@ -99,9 +99,9 @@ export default function Entourage() {
           <div>
             <h4 class="font-script text-2xl text-gray-800 mb-2">Groomsmen</h4>
             <ul class="space-y-1 text-[11px] text-gray-700 font-medium">
-              <li>Mr. Earnest Justin Cruz</li>
-              <li>Mr. Danilo Del Rosario</li>
-              <li>Mr. Lindon Mainit</li>
+              <li>Mr. Bullet F. Ramos</li>
+              <li>Mr. Adam Heziah M. Dulay</li>
+              <li>Mr. Maurice Carlyle M. Dela Cruz</li>
             </ul>
           </div>
           <div>

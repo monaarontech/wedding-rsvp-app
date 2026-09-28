@@ -67,7 +67,7 @@ export default function RsvpForm({ onSuccess }) {
       <div class="text-center mb-6">
         <span class="text-[10px] tracking-[0.25em] text-rose-500 font-semibold uppercase">Kindly Respond</span>
         <h2 class="font-serifTitle text-3xl font-semibold text-gray-800 mt-1">R.S.V.P.</h2>
-        <p class="text-xs text-gray-500 mt-1">Please confirm your response by September 11, 2026</p>
+        <p class="text-xs text-gray-500 mt-1">Please confirm your response by October 5, 2026</p>
       </div>
 
       <form onSubmit={handleSubmit} class="space-y-4">
