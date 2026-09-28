@@ -28,7 +28,7 @@ export default function AttireGuide() {
       {/* Principal Sponsors Attire */}
       <div class="border-t border-amber-200/60 pt-6">
         <h3 class="font-script text-3xl text-gray-800 mb-4">Principal Sponsors Attire</h3>
-        <div class="grid grid-cols-2 gap-4 text-xs">
+        <div class="grid grid-cols-2 gap-4 text-xs mb-4">
           <div class="bg-white p-3 rounded-lg border border-amber-100 shadow-2xs">
             <h4 class="font-bold text-gray-800 uppercase tracking-wider">NINANG</h4>
             <p class="text-amber-800 font-medium">FILIPINIANA</p>
@@ -37,6 +37,15 @@ export default function AttireGuide() {
             <h4 class="font-bold text-gray-800 uppercase tracking-wider">NINONG</h4>
             <p class="text-amber-800 font-medium">BARONG TAGALOG</p>
           </div>
+        </div>
+
+        {/* Custom Ninang & Ninong Illustration */}
+        <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-3 shadow-sm">
+          <img
+            src="/images/media_1790578400497.png"
+            alt="Ninang Filipiniana and Ninong Barong Tagalog Attire Illustration"
+            class="w-full h-auto object-cover rounded-lg"
+          />
         </div>
       </div>
     </section>
