@@ -26,7 +26,7 @@ export default function AttireGuide() {
       </div>
 
       {/* Principal Sponsors Attire */}
-      <div class="border-t border-amber-200/60 pt-6">
+      <div class="border-t border-amber-200/60 pt-6 mb-8">
         <h3 class="font-script text-3xl text-gray-800 mb-4">Principal Sponsors Attire</h3>
         <div class="grid grid-cols-2 gap-4 text-xs mb-4">
           <div class="bg-white p-3 rounded-lg border border-amber-100 shadow-2xs">
@@ -46,6 +46,22 @@ export default function AttireGuide() {
             alt="Ninang Filipiniana and Ninong Barong Tagalog Attire Illustration"
             class="w-full h-auto object-cover rounded-lg"
           />
+        </div>
+      </div>
+
+      {/* A Note on Gifts */}
+      <div class="border-t border-amber-200/60 pt-6 bg-white/70 p-5 rounded-2xl border border-amber-100 shadow-2xs">
+        <h3 class="font-script text-3xl text-gray-800 mb-2">A Note on Gifts</h3>
+        <p class="text-xs text-gray-600 leading-relaxed italic max-w-xs mx-auto mb-3 font-serifTitle">
+          As we join our hearts and begin this beautiful journey together, your love, presence, and support mean the world to us. If you wish to bless us with a gift, a monetary contribution would be deeply appreciated and cherished as we build our future and life together.
+        </p>
+        <p class="font-script text-2xl text-rose-600">Gereth &amp; Garette</p>
+
+        <div class="mt-4 pt-3 border-t border-amber-100/80">
+          <span class="text-[10px] uppercase tracking-widest text-gray-400 block mb-1">Official Hashtag</span>
+          <span class="font-bold text-xs tracking-wider text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-100 inline-block">
+            #FinallyGerethGotGarette
+          </span>
         </div>
       </div>
     </section>
