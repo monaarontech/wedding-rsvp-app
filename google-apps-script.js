@@ -1,5 +1,5 @@
 /**
- * GOOGLE APPS SCRIPT FOR GERETH & GARETTE WEDDING RSVP (REVISED)
+ * GOOGLE APPS SCRIPT FOR GERETH & GARETTE WEDDING RSVP (BULLETPROOF)
  * 
  * Instructions:
  * 1. Open your Google Sheet
@@ -13,15 +13,42 @@
 function doPost(e) {
   try {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var data = JSON.parse(e.postData.contents);
+    var data = {};
+
+    if (e && e.postData && e.postData.contents) {
+      try {
+        data = JSON.parse(e.postData.contents);
+      } catch (err) {
+        data = e.parameter || {};
+      }
+    } else if (e && e.parameter) {
+      data = e.parameter;
+    }
+
+    var timestamp = data.timestamp || new Date().toLocaleString();
+    var name = data.name || data.guestName || '';
+    var attendance = data.attendance || '';
+    
+    // Total guests: check data.totalGuests, data.guestCount, or default to 1 if attending
+    var totalGuests = 0;
+    if (data.totalGuests !== undefined && data.totalGuests !== null && data.totalGuests !== '') {
+      totalGuests = Number(data.totalGuests);
+    } else if (data.guestCount !== undefined && data.guestCount !== null && data.guestCount !== '') {
+      totalGuests = Number(data.guestCount);
+    } else if (attendance === 'Yes' || attendance === 'Joyfully Accept') {
+      totalGuests = 1;
+    }
+
+    var companionNames = data.companionNames || data.companions || 'None';
+    var message = data.message || '';
 
     sheet.appendRow([
-      data.timestamp || new Date().toLocaleString(),
-      data.name || '',
-      data.attendance || '',
-      data.totalGuests !== undefined ? data.totalGuests : (data.attendance === 'Yes' ? 1 : 0),
-      data.companionNames || 'None',
-      data.message || ''
+      timestamp,
+      name,
+      attendance,
+      totalGuests,
+      companionNames,
+      message
     ]);
 
     return ContentService.createTextOutput(JSON.stringify({ result: 'success' }))
