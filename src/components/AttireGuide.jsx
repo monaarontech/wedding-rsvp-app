@@ -25,14 +25,9 @@ export default function AttireGuide() {
         YOUR REVERENCE AND RESPECT MEANS SO MUCH TO US.
       </p>
 
-      {/* Visual Attire Guide */}
-      <div class="space-y-4 mb-6">
-        <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-xs">
-          <img src="/images/media_1790554321104.png" alt="Tropical Color Dress Code Showcase" class="w-full h-48 object-cover rounded-lg" />
-        </div>
-        <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-xs">
-          <img src="/images/media_1790554253337.png" alt="Guest Attire Guide Illustration" class="w-full h-auto rounded-lg" />
-        </div>
+      {/* Tropical Color Bridal Party Showcase */}
+      <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-xs mb-6">
+        <img src="/images/media_1790554321104.png" alt="Tropical Color Dress Code Showcase" class="w-full h-52 object-cover rounded-lg" />
       </div>
 
       {/* Principal Sponsors Attire */}

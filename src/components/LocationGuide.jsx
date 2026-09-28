@@ -7,7 +7,7 @@ export default function LocationGuide() {
       <h2 class="font-script text-4xl text-gray-800 mb-6">Garden Wedding &amp; Reception</h2>
 
       {/* Diana's Resort Venue Card */}
-      <div class="mb-8 p-5 rounded-xl border border-amber-200/80 bg-amber-50/40 text-center shadow-xs">
+      <div class="p-5 rounded-xl border border-amber-200/80 bg-amber-50/40 text-center shadow-xs">
         <span class="inline-block bg-rose-100 text-rose-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
           Garden Wedding
         </span>
@@ -32,13 +32,6 @@ export default function LocationGuide() {
           </svg>
           <span>Get Directions on Google Maps</span>
         </a>
-      </div>
-
-      {/* QR Code Section */}
-      <div class="p-4 rounded-xl border border-amber-200/80 bg-white text-center shadow-xs">
-        <p class="text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Scan QR Code for Location &amp; RSVP Link</p>
-        <img src="/images/media_1790554184653.png" alt="Location QR Code" class="w-36 h-36 mx-auto rounded-lg border p-1 bg-white" />
-        <p class="text-[10px] text-gray-400 mt-2">Scan with your camera for Google Maps directions to Diana's Resort</p>
       </div>
     </section>
   );
