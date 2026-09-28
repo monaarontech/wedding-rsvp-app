@@ -16,7 +16,7 @@ export default function AttireGuide() {
         YOUR REVERENCE AND RESPECT MEANS SO MUCH TO US.
       </p>
 
-      {/* New Custom Guest Attire Guide Image */}
+      {/* Custom Guest Attire Guide Illustration */}
       <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-sm mb-6">
         <img
           src="/images/media_1790570269604.jpg"
