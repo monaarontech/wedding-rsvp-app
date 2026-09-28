@@ -23,10 +23,16 @@ export default function AdminModal({ isOpen, onClose, rsvps, onClear }) {
                 <div class="flex justify-between items-start font-medium">
                   <span class="text-gray-800 text-sm font-bold">{r.name}</span>
                   <span class={`px-2 py-0.5 rounded text-[10px] uppercase font-bold ${r.attendance === 'Yes' ? 'bg-emerald-200 text-emerald-800' : 'bg-rose-200 text-rose-800'}`}>
-                    {r.attendance === 'Yes' ? `Attending (${r.guestCount})` : 'Declined'}
+                    {r.attendance === 'Yes' ? `Attending (${r.totalGuests || (1 + Number(r.numCompanions || 0))})` : 'Declined'}
                   </span>
                 </div>
-                {r.dietary !== 'None' && <p class="text-gray-600 mt-1"><strong>Dietary:</strong> {r.dietary}</p>}
+
+                {r.attendance === 'Yes' && r.companionNames && (
+                  <p class="text-gray-600 mt-1">
+                    <strong>Companions:</strong> {r.companionNames}
+                  </p>
+                )}
+
                 {r.message && <p class="text-gray-600 mt-1 italic">"{r.message}"</p>}
                 <p class="text-[10px] text-gray-400 mt-1 text-right">{r.timestamp}</p>
               </div>
