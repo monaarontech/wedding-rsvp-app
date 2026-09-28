@@ -1,19 +1,13 @@
 /**
- * GOOGLE APPS SCRIPT FOR WEDDING RSVP
+ * GOOGLE APPS SCRIPT FOR GERETH & GARETTE WEDDING RSVP (REVISED)
  * 
  * Instructions:
- * 1. Open a new Google Sheet (e.g. name it "Raymond & Dianne Wedding RSVPs")
- * 2. In row 1, add column headers:
- *    A1: Timestamp | B1: Name | C1: Attendance | D1: Guest Count | E1: Dietary | F1: Message
+ * 1. Open your Google Sheet
+ * 2. Set Row 1 headers to:
+ *    A1: Timestamp | B1: Guest Name | C1: Attendance | D1: Total Guests | E1: Companion Names | F1: Message
  * 3. Click Extensions > Apps Script
- * 4. Paste this entire code into Code.gs
- * 5. Click Deploy > New deployment
- * 6. Select type: Web app
- *    - Description: "RSVP Endpoint"
- *    - Execute as: "Me"
- *    - Who has access: "Anyone"
- * 7. Click Deploy, authorize permissions, and copy the Web App URL!
- * 8. Add that Web App URL to your Vercel Environment Variables as `VITE_GOOGLE_SHEET_URL`
+ * 4. Replace Code.gs with this entire script below and click Save 💾
+ * 5. Click Deploy > Manage deployments > Click Edit (pencil icon) > Version: "New version" > Click Deploy!
  */
 
 function doPost(e) {
@@ -25,8 +19,8 @@ function doPost(e) {
       data.timestamp || new Date().toLocaleString(),
       data.name || '',
       data.attendance || '',
-      data.guestCount || '0',
-      data.dietary || '',
+      data.totalGuests !== undefined ? data.totalGuests : (data.attendance === 'Yes' ? 1 : 0),
+      data.companionNames || 'None',
       data.message || ''
     ]);
 

@@ -20,16 +20,17 @@ export default function RsvpForm({ onSuccess }) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const activeCompanions = companionNames.slice(0, numCompanions).filter(Boolean);
+    const activeCompanions = companionNames.slice(0, Number(numCompanions)).filter(c => c && c.trim() !== '');
+    const totalCount = attendance === 'Yes' ? (1 + Number(numCompanions)) : 0;
+    const companionListStr = attendance === 'Yes' && activeCompanions.length > 0 ? activeCompanions.join(', ') : 'None';
 
     const payload = {
-      name,
-      attendance,
-      numCompanions: attendance === 'Yes' ? numCompanions : 0,
-      companionNames: attendance === 'Yes' ? activeCompanions.join(', ') : '',
-      totalGuests: attendance === 'Yes' ? (1 + Number(numCompanions)) : 0,
-      message: message || '',
-      timestamp: new Date().toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })
+      name: name.trim(),
+      attendance: attendance,
+      totalGuests: totalCount,
+      companionNames: companionListStr,
+      message: message.trim() || '',
+      timestamp: new Date().toLocaleString()
     };
 
     // Save to localStorage for instant local admin preview
@@ -123,7 +124,7 @@ export default function RsvpForm({ onSuccess }) {
           </div>
         </div>
 
-        {/* Dynamic Companions Section (only shown if attending) */}
+        {/* Dynamic Companions Section */}
         {attendance === 'Yes' && (
           <>
             <div>
@@ -142,7 +143,7 @@ export default function RsvpForm({ onSuccess }) {
               </select>
             </div>
 
-            {/* Dynamic Companion Name Inputs */}
+            {/* Dynamic Companion Inputs */}
             {Array.from({ length: numCompanions }).map((_, index) => (
               <div key={index} class="pl-3 border-l-2 border-rose-300 space-y-1 my-2">
                 <label class="block text-xs font-semibold uppercase tracking-wider text-rose-700">
@@ -161,7 +162,7 @@ export default function RsvpForm({ onSuccess }) {
           </>
         )}
 
-        {/* Message for Couple */}
+        {/* Message */}
         <div>
           <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">
             Message for Gereth &amp; Garette
