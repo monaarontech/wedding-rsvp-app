@@ -10,24 +10,19 @@ export default function AttireGuide() {
         Tropical-Colored Suit / Formal &amp; Semi-Formal
       </div>
 
-      {/* Palette Swatches */}
-      <div class="flex justify-center items-center gap-2 mb-6">
-        <span class="w-7 h-7 rounded-full bg-[#ffb3c1] border border-white shadow-xs" title="Coral Pink"></span>
-        <span class="w-7 h-7 rounded-full bg-[#e7c6ff] border border-white shadow-xs" title="Lavender"></span>
-        <span class="w-7 h-7 rounded-full bg-[#b8e0d2] border border-white shadow-xs" title="Ocean Sky"></span>
-        <span class="w-7 h-7 rounded-full bg-[#d8f3dc] border border-white shadow-xs" title="Mint Green"></span>
-        <span class="w-7 h-7 rounded-full bg-[#fcf6bd] border border-white shadow-xs" title="Sunny Yellow"></span>
-      </div>
-
       <p class="text-xs text-gray-600 leading-relaxed max-w-xs mx-auto mb-6">
         PLEASE WEAR FORMAL / SEMI-FORMAL ATTIRE THAT MATCH OUR COLOR MOTIF IN HONOR OF THE BRIDE.<br />
         <strong class="text-rose-600 font-semibold">WE KINDLY ASK THAT GUESTS REFRAIN FROM WEARING WHITE.</strong><br />
         YOUR REVERENCE AND RESPECT MEANS SO MUCH TO US.
       </p>
 
-      {/* Tropical Color Bridal Party Showcase */}
-      <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-xs mb-6">
-        <img src="/images/media_1790554321104.png" alt="Tropical Color Dress Code Showcase" class="w-full h-52 object-cover rounded-lg" />
+      {/* New Custom Guest Attire Guide Image */}
+      <div class="rounded-xl overflow-hidden border border-amber-200/60 bg-white p-2 shadow-sm mb-6">
+        <img
+          src="/images/media_1790570269604.jpg"
+          alt="Guest Attire Guide Illustration"
+          class="w-full h-auto object-cover rounded-lg"
+        />
       </div>
 
       {/* Principal Sponsors Attire */}
