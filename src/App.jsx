@@ -51,9 +51,6 @@ export default function App() {
       <main class="max-w-md mx-auto min-h-screen bg-white shadow-2xl relative overflow-hidden border-x border-amber-50/50">
         {/* Header / Hero */}
         <header class="text-center pt-12 pb-6 px-6 relative z-10">
-          <div class="inline-block px-3.5 py-1 rounded-full bg-rose-50 text-[10px] uppercase tracking-[0.25em] text-rose-600 font-semibold mb-3 border border-rose-100">
-            Wedding Invitation
-          </div>
           <p class="text-xs uppercase tracking-[0.3em] text-gray-500 font-light mb-2">We,</p>
           <h1 class="font-script text-5xl md:text-6xl text-gray-900 leading-tight mb-4">
             Gereth <span class="text-rose-400 font-serifTitle italic font-light text-3xl md:text-4xl">&amp;</span> Garette
