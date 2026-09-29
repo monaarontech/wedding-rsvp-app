@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Countdown from './components/Countdown';
+import RsvpNoticeBanner from './components/RsvpNoticeBanner';
 import PhotoSlideshow from './components/PhotoSlideshow';
 import LocationGuide from './components/LocationGuide';
 import AttireGuide from './components/AttireGuide';
@@ -86,6 +87,7 @@ export default function App() {
           </div>
         </section>
 
+        <RsvpNoticeBanner />
         <Countdown targetDate="2026-10-11T16:00:00" />
         <PhotoSlideshow />
         <LocationGuide />
