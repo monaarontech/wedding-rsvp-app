@@ -40,7 +40,7 @@ export default function Entourage() {
           <div class="space-y-1">
             <p>Mr. Melchor S. Marcelo</p>
             <p>Rev. Alberto D. Victoria</p>
-            <p>Mr. Ruben M. Magallanes</p>
+            <p>Capt. Ruben M. Magallanes</p>
             <p>Mr. Magnum O. Ramos</p>
             <p>Mr. Froilan Abalos</p>
             <p>Mr. Mar Lagarico</p>
