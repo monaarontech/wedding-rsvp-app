@@ -36,14 +36,17 @@ export default function Entourage() {
       {/* Principal Sponsors */}
       <div class="mb-8 text-xs bg-amber-50/40 p-5 rounded-2xl border border-amber-200/60 shadow-2xs">
         <h3 class="font-script text-3xl text-gray-800 mb-3">Principal Sponsors</h3>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-1.5 text-gray-700 font-medium text-[11px] leading-snug">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-1 text-gray-700 font-medium text-[11px] leading-snug">
           <div class="space-y-1">
             <p>Mr. Melchor S. Marcelo</p>
             <p>Rev. Alberto D. Victoria</p>
             <p>Capt. Ruben M. Magallanes</p>
             <p>Mr. Magnum O. Ramos</p>
             <p>Mr. Froilan Abalos</p>
-            <p>Mr. Mar Lagarico</p>
+            <p>Engr. Mar Lagarico</p>
+            <p>Mr. Ernesto Sangalang</p>
+            <p>Mr. Cenon Dela Cruz</p>
+            <p>Mr. Marvin Sicat</p>
           </div>
           <div class="space-y-1">
             <p>Mrs. Victoria B. Marcelo</p>
@@ -52,45 +55,52 @@ export default function Entourage() {
             <p>Mrs. Lalaine C. Ramos</p>
             <p>Mrs. Remedios Abalos</p>
             <p>Mrs. Nerissa Lagarico</p>
+            <p>Hon. Roda Anga-Angan</p>
+            <p>Mrs. Lydia M. Cabantac</p>
+            <p>Mrs. Presilia E. Sapitula</p>
           </div>
         </div>
-        <div class="mt-2.5 pt-2.5 border-t border-amber-200/50 space-y-1 text-gray-700 font-medium text-[11px]">
+        <div class="mt-3 pt-3 border-t border-amber-200/50 space-y-1 text-gray-700 font-medium text-[11px]">
+          <p>Mrs. Ann Benandino Henson</p>
+          <p>Mrs. Florence Ruzo</p>
+          <p>Mrs. Erminda A. Bauto</p>
           <p>Mrs. Ruth M. Palasigue</p>
-          <p>Hon. Roda Anga-Angan</p>
-          <p>Mrs. Presilia E. Sapitula</p>
+          <p>Mrs. Lenilyne V. Pascua</p>
         </div>
       </div>
 
-      {/* Best Man & Maid of Honor */}
-      <div class="grid grid-cols-2 gap-4 mb-8 text-xs">
-        <div class="bg-rose-50/40 p-3.5 rounded-xl border border-rose-100 shadow-2xs">
-          <h4 class="font-script text-2xl text-rose-700 mb-0.5">Best Man</h4>
-          <p class="font-semibold text-gray-800">Mr. Grant Gerson M. Ramos</p>
-        </div>
-        <div class="bg-rose-50/40 p-3.5 rounded-xl border border-rose-100 shadow-2xs">
-          <h4 class="font-script text-2xl text-rose-700 mb-0.5">Maid of Honor</h4>
-          <p class="font-semibold text-gray-800">Ms. Justine Ricci Abalos</p>
-        </div>
-      </div>
-
-      {/* Secondary Sponsors */}
+      {/* Secondary Sponsors Heading */}
       <div class="mb-8 pt-4 border-t border-amber-100 text-xs">
         <h3 class="font-script text-3xl text-gray-800 mb-4">Secondary Sponsors</h3>
-        <div class="grid grid-cols-3 gap-2.5 text-center mb-6">
-          <div class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
-            <span class="font-serifTitle italic text-xs text-rose-600 block mb-1">To light our path</span>
-            <p class="text-[11px] font-medium text-gray-800">Mr. Jehliel Nowel M. Palasigue</p>
-            <p class="text-[11px] text-gray-700">Ms. Noemilyn Angeles</p>
+
+        {/* Best Man & Maid of Honor */}
+        <div class="grid grid-cols-2 gap-4 mb-6 text-xs">
+          <div class="bg-rose-50/40 p-3.5 rounded-xl border border-rose-100 shadow-2xs">
+            <h4 class="font-script text-2xl text-rose-700 mb-0.5">Best Man</h4>
+            <p class="font-semibold text-gray-800">Mr. Grant Gerson M. Ramos</p>
           </div>
-          <div class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
-            <span class="font-serifTitle italic text-xs text-rose-600 block mb-1">To clothe us as one</span>
-            <p class="text-[11px] font-medium text-gray-800">Mr. Jazer M. Palasigue</p>
-            <p class="text-[11px] text-gray-700">Ms. Nuela M. Marcelo</p>
+          <div class="bg-rose-50/40 p-3.5 rounded-xl border border-rose-100 shadow-2xs">
+            <h4 class="font-script text-2xl text-rose-700 mb-0.5">Maid of Honor</h4>
+            <p class="font-semibold text-gray-800">Ms. Justine Ricci Abalos</p>
           </div>
-          <div class="p-3 bg-amber-50/50 rounded-xl border border-amber-100">
-            <span class="font-serifTitle italic text-xs text-rose-600 block mb-1">To bind us together</span>
-            <p class="text-[11px] text-gray-700">Ms. Dana Marie Ramos</p>
-            <p class="text-[11px] font-medium text-gray-800">Mr. John Harold A. Estacio</p>
+        </div>
+
+        {/* Candle, Veil, Cord */}
+        <div class="grid grid-cols-3 gap-2 text-center mb-6">
+          <div class="p-2.5 bg-amber-50/50 rounded-xl border border-amber-100">
+            <span class="font-serifTitle italic text-[11px] text-rose-600 block mb-1">To light our path</span>
+            <p class="text-[10px] font-medium text-gray-800">Mr. Jehliel Nowel M. Palasigue</p>
+            <p class="text-[10px] text-gray-700">Ms. Noemilyn M. Angeles</p>
+          </div>
+          <div class="p-2.5 bg-amber-50/50 rounded-xl border border-amber-100">
+            <span class="font-serifTitle italic text-[11px] text-rose-600 block mb-1">To clothe us as one</span>
+            <p class="text-[10px] font-medium text-gray-800">Mr. Jazer M. Palasigue</p>
+            <p class="text-[10px] text-gray-700">Ms. Nuela Ann Joy M. Marcelo</p>
+          </div>
+          <div class="p-2.5 bg-amber-50/50 rounded-xl border border-amber-100">
+            <span class="font-serifTitle italic text-[11px] text-rose-600 block mb-1">To bind us together</span>
+            <p class="text-[10px] text-gray-700">Ms. Dana Marie F. Ramos</p>
+            <p class="text-[10px] font-medium text-gray-800">Mr. John Harold A. Estacio</p>
           </div>
         </div>
 
@@ -102,6 +112,7 @@ export default function Entourage() {
               <li>Mr. Bullet F. Ramos</li>
               <li>Mr. Adam Heziah M. Dulay</li>
               <li>Mr. Maurice Carlyle M. Dela Cruz</li>
+              <li>Mr. Dustin Morales</li>
             </ul>
           </div>
           <div>
@@ -109,7 +120,7 @@ export default function Entourage() {
             <ul class="space-y-1 text-[11px] text-gray-700 font-medium">
               <li>Ms. Nicole Jose</li>
               <li>Ms. Xylyn Y. Garcia</li>
-              <li>Ms. Gayle M. Castillo</li>
+              <li>Ms. Regina Gayle M. Castillo</li>
               <li>Ms. Margarette Jean R. Canlas</li>
             </ul>
           </div>
@@ -123,7 +134,7 @@ export default function Entourage() {
           </div>
           <div class="bg-white p-3 rounded-lg border border-amber-100 shadow-2xs">
             <h5 class="font-script text-xl text-amber-800">Bible Bearer</h5>
-            <p class="text-[11px] font-medium text-gray-800">Prince Jireh E. Perlas</p>
+            <p class="text-[11px] font-medium text-gray-800">Nathan Jeremiah C. Cruiz</p>
           </div>
           <div class="bg-white p-3 rounded-lg border border-amber-100 shadow-2xs">
             <h5 class="font-script text-xl text-amber-800">Coin Bearer</h5>
