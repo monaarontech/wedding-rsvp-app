@@ -37,35 +37,40 @@ export default function Entourage() {
       <div class="mb-8 text-xs bg-amber-50/40 p-5 rounded-2xl border border-amber-200/60 shadow-2xs">
         <h3 class="font-script text-3xl text-gray-800 mb-3">Principal Sponsors</h3>
         <div class="grid grid-cols-2 gap-x-3 gap-y-1 text-gray-700 font-medium text-[11px] leading-snug">
-          <div class="space-y-1">
+          <div class="space-y-1 text-left sm:text-center">
             <p>Mr. Melchor S. Marcelo</p>
             <p>Rev. Alberto D. Victoria</p>
             <p>Capt. Ruben M. Magallanes</p>
+            <p>Mr. Brisbane Mark Anga-Angan</p>
             <p>Mr. Magnum O. Ramos</p>
-            <p>Mr. Froilan Abalos</p>
             <p>Engr. Mar Lagarico</p>
+            <p>Mr. Leonardo Sangalang</p>
             <p>Mr. Ernesto Sangalang</p>
-            <p>Mr. Cenon Dela Cruz</p>
+            <p>Mr. Simeon G. Dela Cruz</p>
             <p>Mr. Marvin Sicat</p>
+            <p>Mr. Rodolfo Disu</p>
+            <p>Mr. Froilan Abalos</p>
+            <p>Mrs. Erminda A. Bauto</p>
+            <p>Mrs. Lenilyne V. Pascua</p>
+            <p>Mrs. Emelita M. Chavez</p>
           </div>
-          <div class="space-y-1">
+          <div class="space-y-1 text-left sm:text-center">
             <p>Mrs. Victoria B. Marcelo</p>
             <p>Mrs. Evangeline M. Victoria</p>
-            <p>Mrs. Conchita R. Aquino</p>
-            <p>Mrs. Lalaine C. Ramos</p>
-            <p>Mrs. Remedios Abalos</p>
-            <p>Mrs. Nerissa Lagarico</p>
             <p>Hon. Roda Anga-Angan</p>
             <p>Mrs. Lydia M. Cabantac</p>
+            <p>Mrs. Lalaine C. Ramos</p>
+            <p>Mrs. Nerissa Lagarico</p>
+            <p>Mrs. Marife Sangalang</p>
+            <p>Mrs. Conchita R. Aquino</p>
+            <p>Mrs. Rosalinda L. Dela Cruz</p>
             <p>Mrs. Presilia E. Sapitula</p>
+            <p>Mrs. Estrelita Carpio</p>
+            <p>Mrs. Remedios Abalos</p>
+            <p>Mrs. Ann Benandino Henson</p>
+            <p>Mrs. Florence Ruzo</p>
+            <p>Mrs. Ruth M. Palasigue</p>
           </div>
-        </div>
-        <div class="mt-3 pt-3 border-t border-amber-200/50 space-y-1 text-gray-700 font-medium text-[11px]">
-          <p>Mrs. Ann Benandino Henson</p>
-          <p>Mrs. Florence Ruzo</p>
-          <p>Mrs. Erminda A. Bauto</p>
-          <p>Mrs. Ruth M. Palasigue</p>
-          <p>Mrs. Lenilyne V. Pascua</p>
         </div>
       </div>
 
