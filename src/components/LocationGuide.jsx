@@ -40,7 +40,7 @@ export default function LocationGuide() {
             href="https://maps.google.com/?q=Diana's+Resort+Bongabon+Nueva+Ecija"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl shadow-md transition transform active:scale-95 cursor-pointer"
+            class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-xl shadow-md transition transform active:scale-95 cursor-pointer mb-6"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -48,6 +48,20 @@ export default function LocationGuide() {
             </svg>
             <span>Get Directions on Google Maps</span>
           </a>
+
+          {/* Website QR Code Card */}
+          <div class="border-t border-amber-200/60 pt-5 bg-white p-4 rounded-xl border border-amber-100 shadow-2xs">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-rose-600 block mb-1">Share Invitation &amp; RSVP</span>
+            <p class="text-xs font-semibold text-gray-800 mb-3">Scan to Visit Our Wedding Website</p>
+            <div class="inline-block p-2 bg-rose-50/50 rounded-xl border border-rose-100 mb-2">
+              <img
+                src="/images/wedding_website_qr.png"
+                alt="Gereth & Garette Wedding Website QR Code"
+                class="w-40 h-40 object-contain rounded-lg mx-auto bg-white p-1"
+              />
+            </div>
+            <p class="text-[10px] text-gray-400">Scan with your smartphone camera to open &amp; share our invitation</p>
+          </div>
         </div>
       </div>
     </section>
